@@ -1,0 +1,60 @@
+@import '../../styles/font.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Verification{
+    height: 100vh;
+    width: 100vw;
+    padding: 37px 26px;
+
+    .textContainer{
+        margin-bottom: 31px;
+
+        h1{
+            font-style: normal;
+            font-weight: 600;
+            font-size: size(36.4127);
+            line-height: 120%;
+            color: #000000;
+        }
+    
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: size(14);
+            line-height: 137.7%;
+            color: #9796A1;
+        }
+    }
+
+    .code-container{
+        width: 320px;
+        height: 65px;
+        display: flex;
+        justify-content: space-around;
+
+        .code-item{
+            height: 65px;
+            width: 65px;
+            border-radius: 10px;
+            background: #FFFFFF;
+            border: 1px solid #EEEEEE;
+            box-shadow: 15px 20px 45px rgba(233, 233, 233, 0.25);
+            border-radius: 10px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 27.2px;
+            line-height: 27px;
+            color: #FE724C;
+            text-align: center;
+
+            &:focus{
+                outline-color: #FE724C;
+            }
+        }
+    }
+}

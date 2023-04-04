@@ -4,6 +4,7 @@ import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import Home from "../pages/Home";
 import BlankPage from "../pages/BlankPage";
+import Verification from "../pages/verfication";
 
 const MyRoutes = () => {
 	const routes = useRoutes([
@@ -22,6 +23,10 @@ const MyRoutes = () => {
 		{
 			path : '/home',
 			element : <Home />
+		},
+		{
+			path : '/verification',
+			element : <Verification />
 		},
 		{
 			path : '*',
