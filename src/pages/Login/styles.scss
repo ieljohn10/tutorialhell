@@ -16,6 +16,7 @@
 
         .back-btn{
             margin-bottom: 105px;
+            margin-bottom: 50px;
             padding-top: 15px;
             width: size(38);
             height: size(38);
@@ -36,11 +37,11 @@
                 flex-direction: column;
                 
                 label{
-
+                    margin-bottom: 12px;
                 }
 
                 input{
-                    margin-top: 12px;
+                    margin-bottom: 29px;
                     padding: 0 20px;
                     height: size(65);
                     border: 1px solid #EEEEEE;
@@ -50,12 +51,22 @@
                     font-size: size(17);
                     line-height: size(17);
                     color: #C4C4C4;
+
+                    &:focus{
+                        outline-color: #FE724C;
+                    }
                 }
             }
         }
 
         .btn-container{
-            margin-top: 32px;
+            // margin-top: 32px;
+            margin-bottom: 56px;
+            height: 124px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
 
             .forgot-password{
                 font-size: size(14);
@@ -85,15 +96,6 @@
             }
         }
 
-        .btn-container{
-            margin-bottom: 56px;
-            height: 124px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-        }
-
         .sign-in-with{
 
             fieldset{
@@ -113,6 +115,26 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-around;
+                    
+                    .social-item{
+                        width: 147px;
+                        height: 57px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        background: #FFFFFF;
+                        box-shadow: 18.587px 18.587px 37.1739px rgba(211, 209, 216, 0.25);
+                        border-radius: 28.5px;
+
+                        p{
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 13px;
+                            letter-spacing: 0.05em;
+                            color: #000000;
+                        }
+                    }
                 }
             }
         }
