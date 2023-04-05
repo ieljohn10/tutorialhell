@@ -21,7 +21,7 @@ const Login = () => {
             {/* json base web server for beginner  */}
             {/* JWT auth */}
             
-            <div className="login-container">
+            <div className="container">
                 <button className="back-btn" onClick={backBtnHandler}>
                     <span>
                         <AiOutlineArrowLeft />
