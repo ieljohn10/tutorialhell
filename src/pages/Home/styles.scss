@@ -17,7 +17,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            
+
             .hamburger-btn{
                 height: 38px;
                 width: 38px;
@@ -27,7 +27,7 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 12px;
-
+                
                 .bar-container{
                     height: 15px;
                     width: max-content;
@@ -36,10 +36,11 @@
                     justify-content: space-between;
                     
                     .bar{
-                        height: 5px;
+                        height: 3px;
                         width: 20px;
                         background-color:#111719;
-                    
+                        border-radius: 12px;
+
                         &:nth-child(2){
                             width: 15px;
                         }
