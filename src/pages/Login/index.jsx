@@ -9,10 +9,6 @@ import { IconContext } from "react-icons";
 const Login = () => {
     const navigate = useNavigate()
 
-    const backBtnHandler = () => {
-        navigate('/')
-    }
-
     return(
         <div className="Login">
             {/* Study Reusable Component for reusable button
@@ -22,7 +18,7 @@ const Login = () => {
             {/* JWT auth */}
             
             <div className="container">
-                <button className="back-btn" onClick={backBtnHandler}>
+                <button className="back-btn" onClick={()=>navigate('/')}>
                     <span>
                         <AiOutlineArrowLeft />
                     </span>
@@ -40,8 +36,8 @@ const Login = () => {
                     </div>
                     <div className="btn-container">
                         <p className="forgot-password">Forgot Password?</p>
-                        <button className="login-btn">login</button>
-                        <p className="sign-up">Don't have an account? <span onClick={()=>{navigate('/signup')}}>Sign Up</span></p>
+                        <button className="login-btn" onClick={()=>navigate('/home')}>login</button>
+                        <p className="sign-up">Don't have an account? <span onClick={()=>navigate('/signup')}>Sign Up</span></p>
                     </div>
                 </form>
                 <form className="sign-in-with">
